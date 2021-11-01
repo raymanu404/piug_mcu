@@ -11802,11 +11802,10 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(
-      to bottom,
-      rgba(10, 103, 224, 0.8) 0%,
-      rgba(66, 66, 92, 0.8) 100%
-    ),
-    url("../assets/img/marvel_poster.jpg");
+    to bottom,
+    rgba(10, 103, 224, 0.4) 0%,
+    rgba(66, 66, 92, 0.5) 100%),
+    url("../assets/img/marvel_poster5.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11905,7 +11904,10 @@ header.masthead .h1 {
 #filme .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
-
+.font-weight-bold{
+  font-weight: bold;
+  letter-spacing: 1px;
+}
 .about {
   background-image: url("../assets/img/marvel_poster4.jpg");
   background-position: center;
@@ -11913,7 +11915,9 @@ header.masthead .h1 {
   background-attachment: scroll;
   background-size: cover;
 }
-
+.filme{
+  background-image: linear-gradient(to top,#403456,#000);
+}
 .btn-about {
   margin-bottom: 120px;
   font-size: 0.85rem;
