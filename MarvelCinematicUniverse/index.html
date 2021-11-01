@@ -21,20 +21,20 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#page-top">MCU</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#about">Despre</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="#services">Services</a></li> -->
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Filme</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#despre">Despre</a></li>                      
+                        <li class="nav-item"><a class="nav-link" href="#filme">Filme</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         <!-- Masthead-->
         <header id="myHeader" class="masthead">
             <div class="container px-4 px-lg-5 h-100">
@@ -45,7 +45,7 @@
                     </div>
                     <div class="col-lg-8 align-self-baseline">
                         <p class="text-white-75 mb-5">Bine ai venit in lumea Marvel</p>
-                        <a class="btn btn-primary btn-xl" href="#about">Afla mai multe</a>
+                        <a class="btn btn-about  about_button" href="#despre"><img src="assets/captain_america_button1.png" alt="captain america"/>Afla mai multe</a>
                     </div>
                 </div>
                 
@@ -55,22 +55,22 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a> 
 
-        <!-- About-->
-        <section class="page-section bg-primary" id="about">
+        <!-- Despre-->
+        <section class="page-section bg-primary about" id="despre">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">Despre Universul Marvel</h2>
+                        <h2 class="text-white ">Despre Universul Marvel</h2>
                         <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4">Marvel Cinematic Universe (MCU) este o franciză media americană și un univers comun, centrat pe o serie de filme cu supereroi produse de Studiourile Marvel. Filmele se bazează pe personaje care apar în cărțile de benzi desenate americane publicate de Marvel Comics. Franciza include, de asemenea, seriale de televiziune, scurtmetraje, seriale digitale și literatură. Universul comun, la fel ca Universul Marvel original din benzile desenate, a fost stabilit prin trecerea elementelor comune ale intrigii, decorurilor, distribuției și personajelor comune.</p>
-                        <a class="btn btn-light btn-xl" href="#portfolio">Lista Filme</a>
+                        <p class="text-white mb-lg-4 ">Marvel Cinematic Universe (MCU) este o franciză media americană și un univers comun, centrat pe o serie de filme cu supereroi produse de Studiourile Marvel. Filmele se bazează pe personaje care apar în cărțile de benzi desenate americane publicate de Marvel Comics. Franciza include, de asemenea, seriale de televiziune, scurtmetraje, seriale digitale și literatură. Universul comun, la fel ca Universul Marvel original din benzile desenate, a fost stabilit prin trecerea elementelor comune ale intrigii, decorurilor, distribuției și personajelor comune.</p>
+                        <a class="btn  btn-about  about_button" href="#filme"><img src="../assets/iron_man_button1.png" alt="iron man"/>Lista filme</a>
                     </div>
                 </div>
             </div>
         </section>
     
-        <!-- Portfolio-->
-        <div id="portfolio">         
+        <!-- Filme-->
+        <div id="filme">         
             <div class="container-fluid p-4 ">
                 
                 <div class="row g-0 ">                   
@@ -160,20 +160,14 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
-                        <h2 class="mt-0">Mai multe detalii</h2>
+                        <h2 class="mt-0">Feedback</h2>
                         <hr class="divider" />
-                        <p class="text-muted mb-5">Contactati-ma </p>
+                        <p class="text-muted mb-5"></p>
                     </div>
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                     <div class="col-lg-6">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
+                       
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
@@ -188,12 +182,12 @@
                                 <div class="invalid-feedback" data-sb-feedback="email:required">Emailul este necesar.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Emailul nu este valid.</div>
                             </div>
-                            <!-- Phone number input-->
+                            <!-- Phone number input
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                                 <label for="phone">Telefon</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">Telefonul este necesar.</div>
-                            </div>
+                            </div> -->
                             <!-- Message input-->
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
@@ -209,7 +203,7 @@
                                     <div class="fw-bolder">Form submission successful!</div>
                                     To activate this form, sign up at
                                     <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                    
                                 </div>
                             </div>
                             <!-- Submit error message-->
