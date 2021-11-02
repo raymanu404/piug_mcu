@@ -1,11 +1,3 @@
-/*!
-* Start Bootstrap - Creative v7.0.5 (https://startbootstrap.com/theme/creative)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -37,7 +29,7 @@ window.addEventListener('DOMContentLoaded', event => {
             offset: 74,
         });
     };
-
+  
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
@@ -55,9 +47,12 @@ window.addEventListener('DOMContentLoaded', event => {
     new SimpleLightbox({
         elements: '#filme a.portfolio-box'
     });
-
+   
   
 });
+
+
+
 
 
 

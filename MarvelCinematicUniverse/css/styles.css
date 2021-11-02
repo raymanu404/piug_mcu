@@ -11802,9 +11802,10 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(
-    to bottom,
-    rgba(10, 103, 224, 0.4) 0%,
-    rgba(66, 66, 92, 0.5) 100%),
+      to bottom,
+      rgba(10, 103, 224, 0.4) 0%,
+      rgba(66, 66, 92, 0.5) 100%
+    ),
     url("../assets/img/marvel_poster5.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -11904,7 +11905,7 @@ header.masthead .h1 {
 #filme .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
-.font-weight-bold{
+.font-weight-bold {
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -11915,8 +11916,170 @@ header.masthead .h1 {
   background-attachment: scroll;
   background-size: cover;
 }
-.filme{
-  background-image: linear-gradient(to top,#403456,#000);
+.filme {
+  background-image: linear-gradient(to top, #403456, #000);
+}
+.container-filme {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.box {
+  width: 300px;
+  height: 380px;
+  border-radius: 10px;
+  box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 20px 20px;
+}
+.box:hover {
+  padding-block: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.model {
+  height: 350px;
+  max-height: 100%;
+  max-width: 100%;
+}
+.movies-box {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  border-top: 3px solid #292929;
+}
+.movies-img {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.movies-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.movies-box a {
+  text-align: center;
+  display: block;
+  font-weight: 600;
+  display: -webkit-box;
+  max-width: 80%;
+  -webkit-line-clamp: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #3a3a3a;
+  margin: 20px;
+}
+.movies-heading h2 {
+  font-weight: 400;
+  margin: 0px;
+  padding: 1px 20px;
+  background-color: rgba(0, 0, 0, 0.01);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.search {
+  margin-top: -10px;
+  width: 250px;
+  height: 40px;
+  background-color: rgba(245, 245, 245, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0px 20px;
+  /* margin-bottom: -30px; */
+}
+
+.search input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.search i {
+  color: #3a3a3a;
+}
+.cs-hidden {
+  overflow: visible !important;
+}
+.quality {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 5px 20px;
+  font-weight: 500;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
+}
+.movies-heading {
+  display: flex;
+  margin: 0px 2%;
+}
+.movies-box:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  transition: all ease 0.2s;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+.details p {
+  font-family: calibri;
+  font-weight: bold;
+  color: #fff;
+}
+.movies-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btns {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btns a {
+  width: 130px;
+  height: 40px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #3963f0;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.btns a:hover {
+  background-color: #284fd1;
 }
 .btn-about {
   margin-bottom: 120px;

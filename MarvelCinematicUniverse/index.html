@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -18,6 +19,9 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+        <script src="js/lightslider.js"></script>
+        <script src="js/JQuery3.3.1.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -29,6 +33,13 @@
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#despre">Despre</a></li>                      
                         <li class="nav-item"><a class="nav-link" href="#filme">Filme</a></li>
+                        <li class="nav-item">
+                             <div class="search">
+                                <input type="text" placeholder="Cauta Filmul preferat"/>
+                                <!-- search icon -->
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -69,53 +80,118 @@
         </section>
     
         <!-- Filme-->
-        <div id="filme">         
-            <div class="container-fluid p-4 filme">
-                
-                <div class="row ">                   
-                    <div class="col-lg-3 ">
-                        <a class="portfolio-box" href="assets/img/movies1/2008_ironman1.jpg" title="Iron Man - 2008">
-                            <img class="img-fluid" src="assets/img/movies1/2008_ironman1.jpg" alt="Iron Man - 2008" />                          
-                        </a>
-                        <div class="col-lg-8 text-center">                          
-                            <p class="text-dark-75 mb-4 mt-2 text-white">Iron Man - 2008</p>                           
-                        </div>
-                        
-                    </div>
-                    <div class="col-lg-3 ">
-                        <!-- <a class="portfolio-box" href="assets/img/movies1/2008_the-incredible-hulk.jpg" title="The Incredible Hulk - 2008"> -->
-                            <img class="img-fluid" src="assets/img/movies1/2008_the-incredible-hulk.jpg" alt="The Incredible Hulk - 2008" />                           
-                        <!-- </a> -->
-                        <div class="col-lg-8 text-center">                          
-                            <p class="text-dark-75 mb-4 mt-2">The Incredible Hulk - 2008</p>                           
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-2">
-                        <!-- <a class="portfolio-box" href="assets/img/movies1/2010_ironman2.jpg" title="Iron Man 2 - 2010"> -->
-                            <img class="img-fluid" src="assets/img/movies1/2010_ironman2.jpg" alt="Iron Man 2 - 2010" />                           
-                        <!-- </a> -->
-                        <div class="col-lg-8 text-center">                          
-                            <p class="text-dark-75 mb-4 mt-2">Iron Man 2 - 2010</p>                           
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-2">
-                        <!-- <a class="portfolio-box" href="assets/img/movies1/2011_captainAmerica1.jpg" title="Captain America: The First Avenger - 2011"> -->
-                            <img class="img-fluid" src="assets/img/movies1/2011_captainAmerica1.jpg" alt="Captain America: The First Avenger - 2011" />                           
-                        <!-- </a> -->
-                        <div class="col-lg-8 text-center">                          
-                            <p class="text-dark-75 mb-4 mt-2">Captain America: The First Avenger - 2011</p>                           
-                        </div>
-                    </div> 
-                   
-                     
-                                                                                  
-                </div>
-                <!-- <div class="text-center">
-                    <a class="btn btn-primary btn-xl prev1">&#10094;</a>      
-                    <a class="btn btn-primary btn-xl next1">&#10095;</a>      
-               </div>           -->
-            </div>           
+        <!-- <div id="filme">         
+            <div class=" filme container-filme">
+                 
+           </div>                      
+        </div> -->
+        <!-- Filme -->
+        <div class="movies-heading">
+            <h2>Filme Marvel</h2>
         </div>
+        <section class="movies-list" id="filme">
+            <!--box-1------------------------>
+            <div class="movies-box">
+                <!--img------------>
+                <div class="movies-img">
+                    <!-- <div class="quality">HDRip</div> -->
+                    <img src="/assets/img/movies1/2008_ironman1.jpg" alt="Iron Man - 2008">
+                </div>
+                <!--text--------->
+                <a href="#">
+                   Iron Man - 2008
+                </a>
+            </div>
+            <!--box-2------------------------>
+            <div class="movies-box">
+                <!--img------------>
+                <div class="movies-img">
+                    <!-- <div class="quality">HDRip</div> -->
+                    <img src="/assets/img/movies1/2008_the-incredible-hulk.jpg" alt=" The Incredible Hulk - 2008">
+                </div>
+                <!--text--------->
+                <a href="#">
+                    The Incredible Hulk - 2008
+                </a>
+            </div>
+            <!--box-3------------------------>
+            <div class="movies-box">
+                <!--img------------>
+                <div class="movies-img">
+                    <!-- <div class="quality">HDRip</div> -->
+                    <img src="/assets/img/movies1/2010_ironman2.jpg" alt="Iron Man 2 - 2010">
+                </div>
+                <!--text--------->
+                <a href="#">
+                   Iron Man 2 - 2010
+                </a>
+            </div>
+            <!--box-4------------------------>
+            <div class="movies-box">
+                <!--img------------>
+                <div class="movies-img">
+                    <!-- <div class="quality">HDRip</div> -->
+                    <img src="/assets/img/movies1/2011_captainAmerica1.jpg" alt="Captain America: The first Avenger- 2011">
+                </div>
+                <!--text--------->
+                <a href="#">
+                    Captain America: The first Avenger- 2011
+                </a>
+            </div>
+            <!--box-5------------------------>
+            <div class="movies-box">
+                <!--img------------>
+                <div class="movies-img">
+                    <!-- <div class="quality">HDRip</div> -->
+                    <img src="/assets/img/movies1/2011_thor1.jpg" alt="Thor - 2011">
+                </div>
+                <!--text--------->
+                <a href="#">
+                   Thor - 2011
+                </a>
+            </div>
+            <!--box-6------------------------>
+            <div class="movies-box">
+                <!--img------------>
+                <div class="movies-img">
+                    <!-- <div class="quality">HDRip</div> -->
+                    <img src="/assets/img/movies1/2012_avengers1.jpg" alt="The Avengers - 2012">
+                </div>
+                <!--text--------->
+                <a href="#">
+                    The Avengers - 2012
+                </a>
+            </div>
+            <!--box-7------------------------>
+            <div class="movies-box">
+                <!--img------------>
+                <div class="movies-img">
+                    <!-- <div class="quality">HDRip</div> -->
+                    <img src="/assets/img/movies1/2013_ironman3.jpg" alt="Iron Man 3- 2013">
+                </div>
+                <!--text--------->
+                <a href="#">
+                   Iron Man 3 - 2013
+                </a>
+            </div>
+            <!--box-8------------------------>
+            <div class="movies-box">
+                <!--img------------>
+                <div class="movies-img">
+                    <!-- <div class="quality">HDRip</div> -->
+                    <img src="/assets/img/movies1/2013_thor2.jpg" alt="Thor 2 - 2013">
+                </div>
+                <!--text--------->
+                <a href="#">
+                    Thor: The Dark World - 2013
+                </a>
+            </div>
+            <div class="btns">
+
+                <a class="" onclick="plusSlides(-1)">Previous</a>
+                <a class="" onclick="plusSlides(1)">Next</a>
+            </div>
+        </section>
      
         <!-- Contact-->
         <section class="page-section " id="contact">
@@ -204,5 +280,7 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        
     </body>
+    
 </html>
