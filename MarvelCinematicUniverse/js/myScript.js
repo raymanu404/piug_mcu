@@ -322,7 +322,7 @@ document.querySelector("#movie22").addEventListener('click' , () =>{
     document.querySelector(".movie22").classList.remove("modal-container-close");
 });
 
-document.querySelector("#modal-close22").addEventxListener('click', () =>{
+document.querySelector("#modal-close22").addEventListener('click', () =>{
     document.querySelector(".movie22").classList.remove("modal-container");
     document.querySelector(".movie22").classList.add("modal-container-close");
 });
@@ -427,7 +427,16 @@ document.querySelector("#modal-close30").addEventListener('click', () =>{
 
 /************************* NEXT ********************************/
 
+document.querySelector(".title-movie").addEventListener('mouseenter', function( event ) {   
+    document.querySelector(".fab").classList.remove("imdb-none");
+    document.querySelector(".fab").classList.add("fa-imdb");
 
+}, false);
 
+document.querySelector(".title-movie").addEventListener('mouseout', function( event ) { 
+
+    document.querySelector(".fab").classList.remove("fa-imdb");
+    document.querySelector(".fab").classList.add("imdb-none");
+}, false);
 
 
