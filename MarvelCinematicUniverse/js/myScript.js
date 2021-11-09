@@ -8,24 +8,23 @@ const nextSlide = document.getElementById("nextSlide");
 
 //Counter
 let counter = 1;
-
 const size = carouselMovieBox[0].clientWidth;
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 prevSlide.onclick = function (){
-    if(counter <= 0) return;
+    if(counter <= 0) return;  
     // carouselSlide.classList.remove('max-slide');
     carouselSlide.classList.add('next-slide');
     counter--;
+  
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     
 };
-
-nextSlide.onclick = function (){
+nextSlide.onclick= function (){
     if(counter >= carouselMovieBox.length -1) return;
     // carouselSlide.classList.remove('max-slide');
     carouselSlide.classList.add('next-slide');
-    counter++;
+    counter++;   
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     
 };
@@ -47,6 +46,7 @@ carouselSlide.addEventListener('transitionend', ()=>{
     }
 });
 
+
 /*********************************MOVIES AND MODALS *********************************** */
 
 //IRON MAN 1
@@ -67,6 +67,7 @@ document.querySelector("#modal-close1").addEventListener('click', () =>{
     modalContainerMovie1.classList.add("modal-container-close");
   
 });
+
 
 //HULK 1
 const modalContainerMovie2 = document.querySelector(".movie2");
@@ -423,20 +424,30 @@ document.querySelector("#modal-close30").addEventListener('click', () =>{
     document.querySelector(".movie30").classList.add("modal-container-close");
 });
 
+//HAWKEYE
+document.querySelector(".movie31");
+document.querySelector("#movie31").addEventListener('click' , () =>{ 
+    document.querySelector(".movie31").classList.add("modal-container");
+    document.querySelector(".movie31").classList.remove("modal-container-close");
+});
+
+document.querySelector("#modal-close31").addEventListener('click', () =>{
+    document.querySelector(".movie31").classList.remove("modal-container");
+    document.querySelector(".movie31").classList.add("modal-container-close");
+});
+
+//SPIDERMAN:NO WAY HOME
+document.querySelector(".movie32");
+document.querySelector("#movie32").addEventListener('click' , () =>{ 
+    document.querySelector(".movie32").classList.add("modal-container");
+    document.querySelector(".movie32").classList.remove("modal-container-close");
+});
+
+document.querySelector("#modal-close32").addEventListener('click', () =>{
+    document.querySelector(".movie32").classList.remove("modal-container");
+    document.querySelector(".movie32").classList.add("modal-container-close");
+});
+
 
 
 /************************* NEXT ********************************/
-
-document.querySelector(".title-movie").addEventListener('mouseenter', function( event ) {   
-    document.querySelector(".fab").classList.remove("imdb-none");
-    document.querySelector(".fab").classList.add("fa-imdb");
-
-}, false);
-
-document.querySelector(".title-movie").addEventListener('mouseout', function( event ) { 
-
-    document.querySelector(".fab").classList.remove("fa-imdb");
-    document.querySelector(".fab").classList.add("imdb-none");
-}, false);
-
-
