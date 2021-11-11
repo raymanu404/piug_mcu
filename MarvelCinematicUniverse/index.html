@@ -35,10 +35,20 @@
                         <li class="nav-item"><a class="nav-link" href="#despre">Despre</a></li>                      
                         <li class="nav-item"><a class="nav-link" href="#filme">Filme</a></li>
                         <li class="nav-item">
-                             <div class="search">
-                                <input type="text" placeholder="Cauta Filmul preferat"/>
-                                <!-- search icon -->
-                                <i class="fas fa-search"></i>
+                            <div class="searchWrapper">                    
+                                <div class="search">
+                                    <input name="searchMovie" type="text" placeholder="Cauta Filmul preferat"/>
+                                    <div class="autocom-box">
+                                        <ul id="searchList">
+                                          
+                                        </ul>
+                                    </div>
+                                    <!-- search icon -->
+                                    <div class="searchIcon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    
+                                </div>
                             </div>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -63,8 +73,8 @@
             </div>
          
         </header>              
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>  -->
         
         <!-- Despre-->
         <section class="page-section bg-primary about" id="despre">
@@ -130,8 +140,8 @@
                     <p class="text-center font-weight-bold "> Iron Man 2 - 2010</p>           
                 </div>
                           
-                <!--box-5------------------------>
-                <div class="movies-box" id="movie5">
+                <!--box-4------------------------>
+                <div class="movies-box" id="movie4">
                     <!--img------------>
                     <div class="movies-img">
                         <!-- <div class="quality">HDRip</div> -->
@@ -143,8 +153,8 @@
                     </p>
                 </div>
 
-                <!--box-4------------------------>
-                <div class="movies-box" id="movie4">
+                <!--box-5------------------------>
+                <div class="movies-box" id="movie5">
                     <!--img------------>
                     <div class="movies-img">
                         <!-- <div class="quality">HDRip</div> -->
@@ -163,7 +173,7 @@
                     </div>
                     <!--text--------->
                     <p class="text-center font-weight-bold ">
-                        The Avengers - 2012
+                        Avengers - 2012
                     </p>
                 </div>
                 <!--box-7------------------------>
@@ -200,7 +210,7 @@
                     </div>
                     <!--text--------->
                     <p class="text-center font-weight-bold ">
-                        Captain America:Winter Soldier - 2014
+                        Captain America: Winter Soldier - 2014
                     </p>
                 </div>
                   <!-- box-10 -------------------- -->
@@ -215,8 +225,8 @@
                         Guardians Of The Galaxy - 2014
                     </p>
                 </div>
-                  <!-- box-12 -------------------- -->
-                  <div class="movies-box" id="movie12">
+                  <!-- box-11 -------------------- -->
+                  <div class="movies-box" id="movie11">
                     <!--img------------>
                     <div class="movies-img">
                         <!-- <div class="quality">HDRip</div> -->
@@ -224,11 +234,11 @@
                     </div>
                     <!--text--------->
                     <p class="text-center font-weight-bold ">
-                        Avengers:Age of Ultron - 2015
+                        Avengers: Age of Ultron - 2015
                     </p>
                 </div>
-                  <!-- box-11 -------------------- -->
-                  <div class="movies-box" id="movie11">
+                  <!-- box-12 -------------------- -->
+                  <div class="movies-box" id="movie12">
                     <!--img------------>
                     <div class="movies-img">
                         <!-- <div class="quality">HDRip</div> -->
@@ -249,7 +259,7 @@
                     </div>
                     <!--text--------->
                     <p class="text-center font-weight-bold ">
-                        Captain America:Civil War - 2016
+                        Captain America: Civil War - 2016
                     </p>
                 </div>
                   <!-- box-14 -------------------- -->
@@ -273,7 +283,7 @@
                     </div>
                     <!--text--------->
                     <p class="text-center font-weight-bold ">
-                        Guardians of the Galaxy:Vol.2 - 2017
+                        Guardians of the Galaxy: Vol.2 - 2017
                     </p>
                 </div>
                   <!-- box-16 -------------------- -->
@@ -285,7 +295,7 @@
                     </div>
                     <!--text--------->
                     <p class="text-center font-weight-bold ">
-                        Spider Man:HomeComing - 2017
+                        Spider Man: HomeComing - 2017
                     </p>
                 </div>
                   <!-- box-17 -------------------- -->
@@ -297,11 +307,11 @@
                     </div>
                     <!--text--------->
                     <p class="text-center font-weight-bold ">
-                        Thor 3:Ragnarok - 2017
+                        Thor 3: Ragnarok - 2017
                     </p>
                 </div>
-                  <!-- box-20 -------------------- -->
-                  <div class="movies-box" id="movie20">
+                  <!-- box-18 -------------------- -->
+                  <div class="movies-box" id="movie18">
                     <!--img------------>
                     <div class="movies-img">
                         <!-- <div class="quality">HDRip</div> -->
@@ -321,12 +331,12 @@
                     </div>
                     <!--text--------->
                      <p class="text-center font-weight-bold ">
-                        Avengers:Infinity War - 2018
+                        Avengers: Infinity War - 2018
                     </p>
                 </div>
                 
-                  <!-- box-18 -------------------- -->
-                  <div class="movies-box" id="movie18">
+                  <!-- box-20 -------------------- -->
+                  <div class="movies-box" id="movie20">
                     <!--img------------>
                     <div class="movies-img">
                         <!-- <div class="quality">HDRip</div> -->
@@ -334,7 +344,7 @@
                     </div>
                     <!--text--------->
                     <p class="text-center font-weight-bold ">
-                        Ant Man & WASP - 2018
+                        Ant Man & Wasp - 2018
                     </p>
                 </div>
                 
@@ -359,7 +369,7 @@
                     </div>
                     <!--text--------->
                     <p class="text-center font-weight-bold ">
-                        Avengers:Endgame - 2019
+                        Avengers: Endgame - 2019
                     </p>
                 </div>
                   <!-- box-23 -------------------- -->
@@ -371,12 +381,12 @@
                     </div>
                     <!--text--------->
                     <p class="text-center font-weight-bold ">
-                        SpiderMan:Far From Home - 2019
+                        SpiderMan: Far From Home - 2019
                     </p>
                 </div>
 
-                 <!-- box-25 -------------------- -->
-                 <div class="movies-box" id="movie25">
+                 <!-- box-24 -------------------- -->
+                 <div class="movies-box" id="movie24">
                     <!--img------------>
                     <div class="movies-img">
                         <!-- <div class="quality">HDRip</div> -->
@@ -387,8 +397,8 @@
                         Wanda Vision - 2021
                     </p>
                 </div>
-                 <!-- box-26 -------------------- -->
-                 <div class="movies-box" id="movie26">
+                 <!-- box-25 -------------------- -->
+                 <div class="movies-box" id="movie25">
                     <!--img------------>
                     <div class="movies-img">
                         <!-- <div class="quality">HDRip</div> -->
@@ -399,8 +409,8 @@
                         Falcon And The Winter Soldier - 2021
                     </p>
                 </div>
-                  <!-- box-27 -------------------- -->
-                  <div class="movies-box" id="movie27">
+                  <!-- box-26 -------------------- -->
+                  <div class="movies-box" id="movie26">
                     <!--img------------>
                     <div class="movies-img">
                         <!-- <div class="quality">HDRip</div> -->
@@ -411,8 +421,8 @@
                         Loki - 2021
                     </p>
                 </div>
-                  <!-- box-24 -------------------- -->
-                  <div class="movies-box" id="movie24">
+                  <!-- box-27 -------------------- -->
+                  <div class="movies-box" id="movie27">
                     <!--img------------>
                     <div class="movies-img">
                         <!-- <div class="quality">HDRip</div> -->
@@ -433,7 +443,7 @@
                     </div>
                     <!--text--------->
                     <p class="text-center font-weight-bold ">
-                        What If - 2021
+                        What If...? - 2021
                     </p>
                 </div>
                   <!-- box-29 -------------------- -->
@@ -445,7 +455,7 @@
                     </div>
                     <!--text--------->
                     <p class="text-center font-weight-bold ">
-                        Shang Chi:Legend of the Ten Rings - 2021
+                        Shang Chi: Legend of the Ten Rings - 2021
                     </p>
                 </div>
                   <!-- box-30 -------------------- -->
@@ -481,7 +491,7 @@
                     </div>
                     <!--text--------->
                     <p class="text-center font-weight-bold ">
-                        SpiderMan:No Way Home - 2021
+                        SpiderMan: No Way Home - 2021
                     </p>
                 </div>
                 
@@ -560,9 +570,9 @@
                             <!---->
                             <!-- This is what your users will see when there is-->
                             <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Eroare la trimiterea mesajului!</div></div>
                             <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
+                            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Trimite</button></div>
                         </form>
                     </div>
                 </div>
@@ -577,7 +587,7 @@
                 </div>
             </div>
         </section>
-
+ 
         <!-- modal 1 -->
         <div class="modal-container-close movie1">
             <div class="modal-movie" id="modal-movie1">
@@ -617,28 +627,11 @@
                 </div>           
             </div>           
         </div>
-
+      
         <!-- modal 4  -->
         <div class="modal-container-close movie4">
             <div class="modal-movie">
                 <i class="fas fa-times-circle" id="modal-close4"></i>
-                <h2>Captain America:The First Avenger  <a href="https://www.imdb.com/title/tt0458339/" target="_blank"><i class="fab fa-imdb rubberBand"></i></a></h2>
-                <p>Paramount Pictures și Marvel Entertainment prezintă povestea unui om destinat să devină primul Răzbunător din lume.
-                    Suntem în 1941, iar lumea este dezbinată de război. După repetate încercări de a se înrola pentru a-și face datoria alături de confrații săi Aliați, tânărul și pirpiriul Steve Rogers (Chris Evans) e acceptat să facă parte dintr-un program experimental care îl va transforma într-un supersoldat cunoscut sub numele de Căpitanul America.                   
-                    Cu noua sa înfățișare, Căpitanul America se alătură forțelor militare, alături de prietenul său Bucky Barnes (SEBASTIAN STAN) și amica sa, Peggy Carter (HAYLEY ATWELL), sub comanda colonelului Chester Phillips (TOMMY LEE JONES), pentru a declara război diabolicei organizații HYDRA, divizia secretă de cercetare științifică a naziștilor, condusă de ticălosul Red Skull (HUGO WEAVING).    
-                    "Căpitanul America: Primul Răzbunător" se concentrează pe începuturile universului Marvel, care avea să fie populat mai târziu de supereroi precum Iron Man, Hulk și Thor, în vremuri când războaiele se luptau cu arme, dar erau câștigate de oameni.</p>
-                <div class="imgs">
-                    <img src="/assets/img/movies2/2011_captainAmerica1.png" width="520" height="auto" alt="">
-                    <img src="/assets/img/movies2/2011_captainAmerica2.png" width="500" height="auto" alt="">
-                    <img src="/assets/img/movies2/2011_captainAmerica3.png" width="500" height="auto" alt="">
-                </div>           
-            </div>           
-        </div>
-
-        <!-- modal 5  -->
-        <div class="modal-container-close movie5">
-            <div class="modal-movie">
-                <i class="fas fa-times-circle" id="modal-close5"></i>
                 <h2>Thor 1 <a href="https://www.imdb.com/title/tt0800369/?ref_=fn_al_tt_2" target="_blank"><i class="fab fa-imdb rubberBand"></i></a></h2>
                 <p>În anul 965, Odin, regele Asgardului, se află în război cu Giganții de Gheață din Jotunheim și liderului lor Laufey, pentru a-i împiedica să cucerească cele Nouă Tăramuri, începând cu Pământul. Războinicii asgardieni îi înfrâng pe Giganți și le iau sursa lor de putere, Caseta Iernilor Antice.
                     În prezent, fiul Odin, Thor, se pregătește să urce pe tronul Asgardului, dar este întrerupt când Giganții de Gheață încearcă să recupereze Coiful. În ciuda ordinelor lui Odin, Thor călătorește în Jotunheim pentru a-l înfrunta pe Laufey. Thor este însoțit de fratele său Loki, prietenul lui din copilărie Sif și cei Trei Războinici: Volstagg, Fandral și Hogun. Are loc o bătălie, până când Odin intervine pentru a-i salva, distrugând astfel armistițiul fragil dintre asgardieni și Giganți. Pentru aroganța lui Thor, Odin îi ia puterea sa divină și îl exilează pe Pământ ca pe un muritor, împreună cu ciocanul său magic Mjölnir, care este acum aflat sub o vrajă ce le permite doar celor vrednici să-l folosească.                    
@@ -651,6 +644,22 @@
             </div>           
         </div>
 
+         <!-- modal 5  -->
+         <div class="modal-container-close movie5">
+            <div class="modal-movie">
+                <i class="fas fa-times-circle" id="modal-close5"></i>
+                <h2>Captain America:The First Avenger  <a href="https://www.imdb.com/title/tt0458339/" target="_blank"><i class="fab fa-imdb rubberBand"></i></a></h2>
+                <p>Paramount Pictures și Marvel Entertainment prezintă povestea unui om destinat să devină primul Răzbunător din lume.
+                    Suntem în 1941, iar lumea este dezbinată de război. După repetate încercări de a se înrola pentru a-și face datoria alături de confrații săi Aliați, tânărul și pirpiriul Steve Rogers (Chris Evans) e acceptat să facă parte dintr-un program experimental care îl va transforma într-un supersoldat cunoscut sub numele de Căpitanul America.                   
+                    Cu noua sa înfățișare, Căpitanul America se alătură forțelor militare, alături de prietenul său Bucky Barnes (SEBASTIAN STAN) și amica sa, Peggy Carter (HAYLEY ATWELL), sub comanda colonelului Chester Phillips (TOMMY LEE JONES), pentru a declara război diabolicei organizații HYDRA, divizia secretă de cercetare științifică a naziștilor, condusă de ticălosul Red Skull (HUGO WEAVING).    
+                    "Căpitanul America: Primul Răzbunător" se concentrează pe începuturile universului Marvel, care avea să fie populat mai târziu de supereroi precum Iron Man, Hulk și Thor, în vremuri când războaiele se luptau cu arme, dar erau câștigate de oameni.</p>
+                <div class="imgs">
+                    <img src="/assets/img/movies2/2011_captainAmerica1.png" width="520" height="auto" alt="">
+                    <img src="/assets/img/movies2/2011_captainAmerica2.png" width="500" height="auto" alt="">
+                    <img src="/assets/img/movies2/2011_captainAmerica3.png" width="500" height="auto" alt="">
+                </div>           
+            </div>           
+        </div>
         <!-- modal 6  -->
         <div class="modal-container-close movie6">
             <div class="modal-movie">
@@ -729,25 +738,11 @@
                 </div>           
             </div>           
         </div>
-       
+            
         <!-- modal 11  -->
         <div class="modal-container-close movie11">
             <div class="modal-movie">
                 <i class="fas fa-times-circle" id="modal-close11"></i>
-                <h2>Ant Man <a href="https://www.imdb.com/title/tt0478970/?ref_=fn_al_tt_1" target="_blank"><i class="fab fa-imdb rubberBand"></i></a></h2>
-                <p>În 1989, omul de știință Hank Pym a demisionat din S.H.I.E.L.D. după ce au descoperit încercarea lor de a replica tehnologia lui Ant-Man de micșorare. Crezând că tehnologia ar fi periculoasă dacă ar fi replicată, Pym promite că o va ascunde atâta timp cât va trăi. În zilele noastre, [N 1] fiica înstrăinată a lui Pym, Hope van Dyne, și fostul protejat, Darren Cross, l-au forțat să părăsească compania lui, Pym Technologies. Cross este aproape de a-și perfecționa un costum care se micșorează, Jacheta galbenă, care îl îngrozește pe Pym.
-                    După eliberarea din închisoare, hoțul bine intenționat Scott Lang se mută cu vechiul său coleg de celulă, Luis. Lang o vizitează pe fiica sa Cassie neanunțată și este pedepsit de fosta sa soție Maggie și de logodnicul ei detectiv de poliție, Paxton, pentru că nu acordă întreținere pentru copii. Incapabil să își păstreze un loc de muncă din cauza cazierului său, Lang acceptă să se alăture echipajului lui Luis și să comită o spargere. Lang intră într-o casă și sparge seiful acesteia, dar găsește doar ceea ce crede el a fi un costum vechi de motocicletă, pe care îl ia acasă. După ce a încercat costumul, Lang se micșorează accidental la dimensiunea unei insecte. Îngrozit de experiență, el returnează costumul în casă, dar este arestat la ieșire. Pym, proprietarul casei, îl vizitează pe Lang în închisoare și introduce costumul în celula lui pentru a-l ajuta să iasă.</p>
-                <div class="imgs">
-                    <img src="/assets/img/movies2/2015_antman.png" width="500" height="auto" alt="">               
-                    <img src="/assets/img/movies2/2015_antman1.png" width="500" height="auto" alt="">
-                </div>           
-            </div>           
-        </div>
-       
-        <!-- modal 12  -->
-        <div class="modal-container-close movie12">
-            <div class="modal-movie">
-                <i class="fas fa-times-circle" id="modal-close12"></i>
                 <h2>Avengers:Age of Ultron <a href="https://www.imdb.com/title/tt2395427/?ref_=fn_al_tt_1" target="_blank"><i class="fab fa-imdb rubberBand"></i></a></h2>
                 <p>La un an după evenimentele din Căpitanul America: Războinicul iernii, în țara Sokovia din Europa de Est, Răzbunătorii - Tony Star, Steve Roger, Thor, Bruce Banner, Natasha Romanoff și Clint Baron - atacă o bază Hydra comandată de Baronul Wolfgang von Strucker, care a făcut experimente pe oameni folosind sceptrul magic deținut anterior de Loki. În timpul luptei, Răzbunătorii îi confruntă pe ce doi subiecți de testare ai lui Strucker: gemenii Pietro Maximoff, care super viteză, și Wanda Maximoff, care are puteri telepatice și telekinetice. Rogers îl învinge și imobilizează pe Strucker, în timp ce Stark recuperează sceptrul lui Loki.
 
@@ -760,6 +755,19 @@
             </div>           
         </div>
 
+        <!-- modal 12  -->
+        <div class="modal-container-close movie12">
+            <div class="modal-movie">
+                <i class="fas fa-times-circle" id="modal-close12"></i>
+                <h2>Ant Man <a href="https://www.imdb.com/title/tt0478970/?ref_=fn_al_tt_1" target="_blank"><i class="fab fa-imdb rubberBand"></i></a></h2>
+                <p>În 1989, omul de știință Hank Pym a demisionat din S.H.I.E.L.D. după ce au descoperit încercarea lor de a replica tehnologia lui Ant-Man de micșorare. Crezând că tehnologia ar fi periculoasă dacă ar fi replicată, Pym promite că o va ascunde atâta timp cât va trăi. În zilele noastre, [N 1] fiica înstrăinată a lui Pym, Hope van Dyne, și fostul protejat, Darren Cross, l-au forțat să părăsească compania lui, Pym Technologies. Cross este aproape de a-și perfecționa un costum care se micșorează, Jacheta galbenă, care îl îngrozește pe Pym.
+                    După eliberarea din închisoare, hoțul bine intenționat Scott Lang se mută cu vechiul său coleg de celulă, Luis. Lang o vizitează pe fiica sa Cassie neanunțată și este pedepsit de fosta sa soție Maggie și de logodnicul ei detectiv de poliție, Paxton, pentru că nu acordă întreținere pentru copii. Incapabil să își păstreze un loc de muncă din cauza cazierului său, Lang acceptă să se alăture echipajului lui Luis și să comită o spargere. Lang intră într-o casă și sparge seiful acesteia, dar găsește doar ceea ce crede el a fi un costum vechi de motocicletă, pe care îl ia acasă. După ce a încercat costumul, Lang se micșorează accidental la dimensiunea unei insecte. Îngrozit de experiență, el returnează costumul în casă, dar este arestat la ieșire. Pym, proprietarul casei, îl vizitează pe Lang în închisoare și introduce costumul în celula lui pentru a-l ajuta să iasă.</p>
+                <div class="imgs">
+                    <img src="/assets/img/movies2/2015_antman.png" width="500" height="auto" alt="">               
+                    <img src="/assets/img/movies2/2015_antman1.png" width="500" height="auto" alt="">
+                </div>           
+            </div>           
+        </div>
         <!-- modal 13 -->
         <div class="modal-container-close movie13">
             <div class="modal-movie">
@@ -834,21 +842,23 @@
                 </div>           
             </div>           
         </div>
-
+      
         <!-- modal 18 -->
         <div class="modal-container-close movie18">
             <div class="modal-movie">
                 <i class="fas fa-times-circle" id="modal-close18"></i>
-                <h2>Ant Man & Wasp <a href="https://www.imdb.com/title/tt5095030/?ref_=fn_al_tt_2" target="_blank"><i class="fab fa-imdb rubberBand"></i></a></h2>
-                <p>La doi ani după ce Scott Lang a fost plasat în arest la domiciliu din cauza implicării sale cu Răzbunătorii, încălcând Acordurile Sokovia, [N 1] Hank Pym și fiica sa Hope van Dyne reușesc pentru scurt timp să deschidă un tunel către Regatul Cuantic. Ei cred că soția lui Pym, Janet van Dyne, ar putea fi prinsă acolo după ce s-a micșorat la niveluri sub-atomice în 1987. Când vizitase anterior tărâmul cuantic, Lang se încurcase cu Janet fără să știe, iar acum primește un mesaj aparent de la ea.
-                    Cu doar câteva zile de arest la domiciliu, Lang o contactează pe Pym în legătură cu Janet, în ciuda relației tensionate pe care o au din cauza acțiunilor lui Lang cu Răzbunătorii. Hope și Pym îl răpesc pe Lang, lăsând o furnică mare cu monitorul de gleznă al lui Lang aprins ca momeală pentru a nu trezi suspiciunile agentului FBI Jimmy Woo. Crezând că mesajul de la Janet este o confirmare că ea este în viață, cei trio lucrează pentru a construi un tunel cuantic stabil, astfel încât să poată duce un vehicul în tărâmul cuantic și să o recupereze. Ei aranjează să cumpere o piesă necesară pentru tunel de la dealer-ul de pe piața neagră Sonny Burch, dar Burch își dă seama de potențialul profit care poate fi obținut din cercetările lui Pym și le încrucișează. Îmbrăcată cu ținuta de viespe, Hope luptă cu Burch și oamenii săi până când este atacată de o femeie mascată cuantic instabilă. Lang încearcă să ajute să lupte împotriva acestei „fantome”, dar femeia scapă cu laboratorul lui Pym, care a fost micșorat până la dimensiunea unei valize.</p>
+                <h2>Black Panther <a href="https://www.imdb.com/title/tt1825683/?ref_=fn_al_tt_1" target="_blank"><i class="fab fa-imdb rubberBand"></i></a></h2>
+                <p>Cu mii de ani în urmă, un meteorit plin cu metalul rar și aproape indestructibil numit vibraniu s-a prăbușit pe Pământ, unde cinci triburi africane au început să se lupte pentru el. Unul dintre războinici înghite o "plantă în formă de inimă" afectată de vibraniu și capătă abilități supra umane, devenind primul războinic cu titlul de "Black Panther". El unește patru dintre triburi (fără tribul Jabari) și formează națiunea Wakanda.
+                    În 1992, regele Wakandei, T'Chaka, își vizitează fratele N'Jobu care lucrează sub acoperire în Oakland, California. T'Chakka îl acuză că a trădat Wakanda, ajutându-l pe traficantul de arme Ulysses Klaue să fure o cantitate mare de vibraniu din Wakanda. Partenerul lui N'Jobu dezvăluie că se numește defapt Zuri și că este de asemenea sub acoperire, confirmându-i suspiciunile lui T'Chaka.                   
+                    În prezent, după moartea lui T'Chaka, fiul său T'Challa se întoarce în Wakanda pentru a-și revendica tronul. El și Okoye, liderul regimentului Dora Milaje, o extrag pe fosta iubită a lui T'Challa, Nakia, dintr-o misiune sub acoperire, pentru a putea participa la ceremonia sa de încoronare, împreună cu mama sa Ramonda și sora lui mai mică Shuri. La ceremonie, liderul tribului Jabari, M'Baku, îl provoacă pe T'Challa pentru coroană într-o luptă ceremonială. T'Challa îl învinge pe M'Baku și îl convinge să se predea, pentru a nu muri. Astfel, T'Challa devine noul rege de drept al Wakandei                   
+                    După ce Klaue și noul său partener, Erik Stevens, fură un artefact din Wakanda de la un muzeu din Londra, prietenul lui T'Challa și iubitul lui Okoye, W'Kabi, îl îndeamnă să îl captureze pe Klaue și să-l aducă aici în viață. T'Challa, Okoye și Nakia călătoresc în Busan, Coreea de Sud, unde Klaue intenționează să vândă artefactul agentului CIA Everett K. Ross, un prieten vechi al lui T'Challa. Izbucnește un foc de armă iar Klaue încearcă să fugă, dar este prins de T'Challa. Totuși, el este nevoit să-l elibereze și lase în custodia lui Ross.</p>
                 <div class="imgs">                                
-                    <img src="/assets/img/movies2/2018_antman.png" width="550" height="auto" alt="">                  
-                    <img src="/assets/img/movies2/2018_antman1.png" width="580" height="auto" alt="">                  
+                    <img src="/assets/img/movies2/2018_blackpanther.png" width="550" height="auto" alt="">                  
+                    <img src="/assets/img/movies2/2018_blackpanther1.png" width="580" height="auto" alt="">                  
                 </div>           
             </div>           
         </div>
-
+ 
         <!-- modal 19 -->
         <div class="modal-container-close movie19">
             <div class="modal-movie">
@@ -865,18 +875,16 @@
             </div>           
         </div>
 
-        <!-- modal 20 -->
+       <!-- modal 20 -->
         <div class="modal-container-close movie20">
             <div class="modal-movie">
                 <i class="fas fa-times-circle" id="modal-close20"></i>
-                <h2>Black Panther <a href="https://www.imdb.com/title/tt1825683/?ref_=fn_al_tt_1" target="_blank"><i class="fab fa-imdb rubberBand"></i></a></h2>
-                <p>Cu mii de ani în urmă, un meteorit plin cu metalul rar și aproape indestructibil numit vibraniu s-a prăbușit pe Pământ, unde cinci triburi africane au început să se lupte pentru el. Unul dintre războinici înghite o "plantă în formă de inimă" afectată de vibraniu și capătă abilități supra umane, devenind primul războinic cu titlul de "Black Panther". El unește patru dintre triburi (fără tribul Jabari) și formează națiunea Wakanda.
-                    În 1992, regele Wakandei, T'Chaka, își vizitează fratele N'Jobu care lucrează sub acoperire în Oakland, California. T'Chakka îl acuză că a trădat Wakanda, ajutându-l pe traficantul de arme Ulysses Klaue să fure o cantitate mare de vibraniu din Wakanda. Partenerul lui N'Jobu dezvăluie că se numește defapt Zuri și că este de asemenea sub acoperire, confirmându-i suspiciunile lui T'Chaka.                   
-                    În prezent, după moartea lui T'Chaka, fiul său T'Challa se întoarce în Wakanda pentru a-și revendica tronul. El și Okoye, liderul regimentului Dora Milaje, o extrag pe fosta iubită a lui T'Challa, Nakia, dintr-o misiune sub acoperire, pentru a putea participa la ceremonia sa de încoronare, împreună cu mama sa Ramonda și sora lui mai mică Shuri. La ceremonie, liderul tribului Jabari, M'Baku, îl provoacă pe T'Challa pentru coroană într-o luptă ceremonială. T'Challa îl învinge pe M'Baku și îl convinge să se predea, pentru a nu muri. Astfel, T'Challa devine noul rege de drept al Wakandei                   
-                    După ce Klaue și noul său partener, Erik Stevens, fură un artefact din Wakanda de la un muzeu din Londra, prietenul lui T'Challa și iubitul lui Okoye, W'Kabi, îl îndeamnă să îl captureze pe Klaue și să-l aducă aici în viață. T'Challa, Okoye și Nakia călătoresc în Busan, Coreea de Sud, unde Klaue intenționează să vândă artefactul agentului CIA Everett K. Ross, un prieten vechi al lui T'Challa. Izbucnește un foc de armă iar Klaue încearcă să fugă, dar este prins de T'Challa. Totuși, el este nevoit să-l elibereze și lase în custodia lui Ross.</p>
+                <h2>Ant Man & Wasp <a href="https://www.imdb.com/title/tt5095030/?ref_=fn_al_tt_2" target="_blank"><i class="fab fa-imdb rubberBand"></i></a></h2>
+                <p>La doi ani după ce Scott Lang a fost plasat în arest la domiciliu din cauza implicării sale cu Răzbunătorii, încălcând Acordurile Sokovia, [N 1] Hank Pym și fiica sa Hope van Dyne reușesc pentru scurt timp să deschidă un tunel către Regatul Cuantic. Ei cred că soția lui Pym, Janet van Dyne, ar putea fi prinsă acolo după ce s-a micșorat la niveluri sub-atomice în 1987. Când vizitase anterior tărâmul cuantic, Lang se încurcase cu Janet fără să știe, iar acum primește un mesaj aparent de la ea.
+                    Cu doar câteva zile de arest la domiciliu, Lang o contactează pe Pym în legătură cu Janet, în ciuda relației tensionate pe care o au din cauza acțiunilor lui Lang cu Răzbunătorii. Hope și Pym îl răpesc pe Lang, lăsând o furnică mare cu monitorul de gleznă al lui Lang aprins ca momeală pentru a nu trezi suspiciunile agentului FBI Jimmy Woo. Crezând că mesajul de la Janet este o confirmare că ea este în viață, cei trio lucrează pentru a construi un tunel cuantic stabil, astfel încât să poată duce un vehicul în tărâmul cuantic și să o recupereze. Ei aranjează să cumpere o piesă necesară pentru tunel de la dealer-ul de pe piața neagră Sonny Burch, dar Burch își dă seama de potențialul profit care poate fi obținut din cercetările lui Pym și le încrucișează. Îmbrăcată cu ținuta de viespe, Hope luptă cu Burch și oamenii săi până când este atacată de o femeie mascată cuantic instabilă. Lang încearcă să ajute să lupte împotriva acestei „fantome”, dar femeia scapă cu laboratorul lui Pym, care a fost micșorat până la dimensiunea unei valize.</p>
                 <div class="imgs">                                
-                    <img src="/assets/img/movies2/2018_blackpanther.png" width="550" height="auto" alt="">                  
-                    <img src="/assets/img/movies2/2018_blackpanther1.png" width="580" height="auto" alt="">                  
+                    <img src="/assets/img/movies2/2018_antman.png" width="550" height="auto" alt="">                  
+                    <img src="/assets/img/movies2/2018_antman1.png" width="580" height="auto" alt="">                  
                 </div>           
             </div>           
         </div>
@@ -933,28 +941,11 @@
                 </div>           
             </div>           
         </div>
-
+        
         <!-- modal 24 -->
         <div class="modal-container-close movie24">
             <div class="modal-movie">
                 <i class="fas fa-times-circle" id="modal-close24"></i>
-                <h2>Black Widow <a href="https://www.imdb.com/title/tt3480822/?ref_=nv_sr_srsg_0" target="_blank"><i class="fab fa-imdb rubberBand"></i></a></h2>
-                <p>
-                    În 1995, super-soldatul Alexei Shostakov și Black Widow Melina Vostokoff lucrează ca agenți ruși sub acoperire, pozând ca o familie în Ohio, cu Natasha Romanoff și Yelena Belova drept fiicele lor. Ei fură S.H.I.E.L.D. informații și evadează în Cuba, unde șeful lor, generalul Dreykov, îi duce pe Romanoff și Belova în Camera Roșie pentru antrenament. Trec anii, timp în care Shostakov este închis în Rusia, în timp ce Romanoff defectează la S.H.I.E.L.D. după ce a bombardat biroul lui Dreykov din Budapesta și, se pare, i-a ucis pe el și pe tânăra sa fiică Antonia.
-                    În 2016, Romanoff este un fugar pentru încălcarea Acordurilor de la Sokovia. Ea scapă de secretarul de stat al SUA Thaddeus Ross și fuge într-o casă sigură din Norvegia, furnizată de Rick Mason. Între timp, Belova ucide o fostă văduvă neagră necinstită, dar intră în contact cu un gaz sintetic care neutralizează agentul chimic de control al minții din Camera Roșie. Belova îi trimite fiole cu antidot lui Romanoff, sperând că ea și Răzbunătorii le pot elibera pe celelalte văduve și se ascunde. Când Romanoff conduce fără să știe cu fiolele din mașina ei, agentul Red Room Taskmaster o atacă. Romanoff scapă de la Taskmaster și își dă seama că fiolele au venit de la Budapesta. Acolo o găsește pe Belova care dezvăluie că Dreykov este în viață și Camera Roșie este încă activă. Black Widows și Taskmaster îi atacă, dar Romanoff și Belova îi ocolesc și se întâlnesc cu Mason, care le furnizează un elicopter.                   
-                    Romanoff și Belova îl scot pe Shostakov din închisoare pentru a afla locația lui Dreykov, iar el îi direcționează către Vostokoff, care locuiește la o fermă în afara Sankt Petersburgului. Acolo ea perfecționează procesul chimic de control al minții folosit la Widows. Vostokoff îl alertează pe Dreykov și agenții săi să-i ia, dar Romanoff îl convinge pe Vostokoff să-i ajute, iar perechea să folosească tehnologia măștilor de față pentru a schimba locul. În Camera Roșie, o instalație aeriană, Vostokoff îi eliberează pe Shostakov și Belova de constrângerile lor. Dreykov vede prin deghizarea lui Romanoff și dezvăluie că Taskmaster este Antonia, care a suferit daune suficient de grave încât Dreykov a trebuit să-și pună tehnologia în cap. Asta a făcut-o soldatul perfect, capabil să imite acțiunile oricui vede. Romanoff nu-l poate ataca pe Dreykov din cauza unui blocaj cu feromoni instalat în fiecare văduvă, dar neagă acest lucru rupându-și propriul nas și tăindu-i un nerv în pasajul nazal. Shostakov se luptă cu Taskmaster în timp ce Vostokoff scoate unul dintre motoarele unității. Apoi îl închid pe Taskmaster într-o celulă.
-                </p>
-                <div class="imgs">                                
-                    <img src="/assets/img/movies2/2021_blackWidow.png" width="550" height="auto" alt="">                  
-                    <img src="/assets/img/movies2/2021_blackWidow1.png" width="580" height="auto" alt="">                                                    
-                </div>           
-            </div>           
-        </div>
-
-        <!-- modal 25 -->
-        <div class="modal-container-close movie25">
-            <div class="modal-movie">
-                <i class="fas fa-times-circle" id="modal-close25"></i>
                 <h2>Wanda Vision <a href="https://www.imdb.com/title/tt9140560/?ref_=fn_al_tt_3" target="_blank"><i class="fab fa-imdb rubberBand"></i></a></h2>
                 
                 <p>
@@ -970,11 +961,11 @@
                 </div>           
             </div>           
         </div>
-
-        <!-- modal 26 -->
-        <div class="modal-container-close movie26">
+    
+        <!-- modal 25 -->
+        <div class="modal-container-close movie25">
             <div class="modal-movie">
-                <i class="fas fa-times-circle" id="modal-close26"></i>
+                <i class="fas fa-times-circle" id="modal-close25"></i>
                 <h2>The Falcon and the Winter Soldier <a href="https://www.imdb.com/title/tt9208876/?ref_=nv_sr_srsg_0" target="_blank"><i class="fab fa-imdb rubberBand"></i></a></h2>
                 
                 <p>
@@ -993,10 +984,10 @@
             </div>           
         </div>
 
-        <!-- modal 27 -->
-        <div class="modal-container-close movie27">
+        <!-- modal 26 -->
+        <div class="modal-container-close movie26">
             <div class="modal-movie">
-                <i class="fas fa-times-circle" id="modal-close27"></i>
+                <i class="fas fa-times-circle" id="modal-close26"></i>
                 <h2>Loki <a href="https://www.imdb.com/title/tt9140554/?ref_=fn_al_tt_1" target="_blank"><i class="fab fa-imdb rubberBand"></i></a></h2>
                 
                 <p>
@@ -1011,6 +1002,22 @@
                     <img src="/assets/img/movies2/2021_loki1.png" width="550" height="auto" alt="">                  
                     <img src="/assets/img/movies2/2021_loki2.png" width="580" height="auto" alt="">                                                    
                     <img src="/assets/img/movies2/2021_loki3.png" width="520" height="auto" alt="">                                                    
+                </div>           
+            </div>           
+        </div>
+        <!-- modal 27 -->
+        <div class="modal-container-close movie27">
+            <div class="modal-movie">
+                <i class="fas fa-times-circle" id="modal-close27"></i>
+                <h2>Black Widow <a href="https://www.imdb.com/title/tt3480822/?ref_=nv_sr_srsg_0" target="_blank"><i class="fab fa-imdb rubberBand"></i></a></h2>
+                <p>
+                    În 1995, super-soldatul Alexei Shostakov și Black Widow Melina Vostokoff lucrează ca agenți ruși sub acoperire, pozând ca o familie în Ohio, cu Natasha Romanoff și Yelena Belova drept fiicele lor. Ei fură S.H.I.E.L.D. informații și evadează în Cuba, unde șeful lor, generalul Dreykov, îi duce pe Romanoff și Belova în Camera Roșie pentru antrenament. Trec anii, timp în care Shostakov este închis în Rusia, în timp ce Romanoff defectează la S.H.I.E.L.D. după ce a bombardat biroul lui Dreykov din Budapesta și, se pare, i-a ucis pe el și pe tânăra sa fiică Antonia.
+                    În 2016, Romanoff este un fugar pentru încălcarea Acordurilor de la Sokovia. Ea scapă de secretarul de stat al SUA Thaddeus Ross și fuge într-o casă sigură din Norvegia, furnizată de Rick Mason. Între timp, Belova ucide o fostă văduvă neagră necinstită, dar intră în contact cu un gaz sintetic care neutralizează agentul chimic de control al minții din Camera Roșie. Belova îi trimite fiole cu antidot lui Romanoff, sperând că ea și Răzbunătorii le pot elibera pe celelalte văduve și se ascunde. Când Romanoff conduce fără să știe cu fiolele din mașina ei, agentul Red Room Taskmaster o atacă. Romanoff scapă de la Taskmaster și își dă seama că fiolele au venit de la Budapesta. Acolo o găsește pe Belova care dezvăluie că Dreykov este în viață și Camera Roșie este încă activă. Black Widows și Taskmaster îi atacă, dar Romanoff și Belova îi ocolesc și se întâlnesc cu Mason, care le furnizează un elicopter.                   
+                    Romanoff și Belova îl scot pe Shostakov din închisoare pentru a afla locația lui Dreykov, iar el îi direcționează către Vostokoff, care locuiește la o fermă în afara Sankt Petersburgului. Acolo ea perfecționează procesul chimic de control al minții folosit la Widows. Vostokoff îl alertează pe Dreykov și agenții săi să-i ia, dar Romanoff îl convinge pe Vostokoff să-i ajute, iar perechea să folosească tehnologia măștilor de față pentru a schimba locul. În Camera Roșie, o instalație aeriană, Vostokoff îi eliberează pe Shostakov și Belova de constrângerile lor. Dreykov vede prin deghizarea lui Romanoff și dezvăluie că Taskmaster este Antonia, care a suferit daune suficient de grave încât Dreykov a trebuit să-și pună tehnologia în cap. Asta a făcut-o soldatul perfect, capabil să imite acțiunile oricui vede. Romanoff nu-l poate ataca pe Dreykov din cauza unui blocaj cu feromoni instalat în fiecare văduvă, dar neagă acest lucru rupându-și propriul nas și tăindu-i un nerv în pasajul nazal. Shostakov se luptă cu Taskmaster în timp ce Vostokoff scoate unul dintre motoarele unității. Apoi îl închid pe Taskmaster într-o celulă.
+                </p>
+                <div class="imgs">                                
+                    <img src="/assets/img/movies2/2021_blackWidow.png" width="550" height="auto" alt="">                  
+                    <img src="/assets/img/movies2/2021_blackWidow1.png" width="580" height="auto" alt="">                                                    
                 </div>           
             </div>           
         </div>
@@ -1108,6 +1115,9 @@
             </div>           
         </div>
 
+        <div class="button-up">
+           <a class="button-for-up" href="#page-top"> <i class="fas fa-arrow-up" ></i></a>
+        </div>
         
         <!-- Footer-->
         <footer class="bg-light py-5">
@@ -1119,13 +1129,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <script src="js/myScript.js"></script>
-        
+        <script src="js/suggestionsMovies.js"></script>
+        <script src="js/searchMovie.js"></script>
     </body>
     
 </html>

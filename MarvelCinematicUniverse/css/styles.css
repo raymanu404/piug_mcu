@@ -12002,23 +12002,91 @@ header.masthead .h1 {
 }
 .search {
   margin-top: -10px;
-  width: 250px;
+  width: 350px;
   height: 40px;
   background-color: rgba(245, 245, 245, 0.8);
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 0px 20px;
+  
   /* margin-bottom: -30px; */
+
+}
+.searchWrapper .search{
+  position:relative;
+  max-width:450px;
+  font-size: 16px;
+  /* width: 100%; */
+}
+.search .searchIcon{
+  position: absolute;
+  right: 0;
+  top:0;
+  text-align: center;
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-top: 10px;
+  /* margin-left: 20px; */
+  padding-bottom: 10px;
+
 }
 
 .search input {
   width: 100%;
-  height: 30px;
+  height: 40px;
   border: none;
   outline: none;
   background-color: transparent;
+  /* box-shadow: 0px 1px 5px rgba(0,0,0,.12); */
+}
+
+.search .autocom-box{
+  /* margin-top: 10px; */
+  width: 350px;
+  margin-left: -20px;
+  /* padding:10px 10px; */
+  /* width: 100%; */
+  padding:0px;
+  background-color: rgba(255,255,255,.9);
+  border-radius: 5px;
+  overflow-y: auto;
+  max-height: 200px;
+  opacity: 0;
+  pointer-events: none;
+}
+.search.active .autocom-box{
+  text-transform: none;
+  padding:10px 10px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.autocom-box ul{
+ 
+  margin-left: -30px;
+}
+.autocom-box ul li{
+  display: none;
+  list-style: none;
+  padding:5px 12px;
+  width: 100%;
+  cursor:default;
+  border-radius:3px;
+}
+.search.active .autocom-box ul li{
+  display: block;
+  
+}
+.autocom-box ul li:hover{
+  background-color: #7F9AF5;
+  color:#fff;
+}
+.search .suggest{
+  position:relative;
+  
 }
 .search i {
   color: #3a3a3a;
@@ -12206,7 +12274,37 @@ header.masthead .h1 {
   animation-name: rubberBand;
   animation-duration: 1.5s;
 }
-
+.button-up{
+  display: flex;
+  padding:20px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  float: right;
+  border-color: rgba(85, 85, 85, 0.2);
+  z-index: 1030;
+}
+.button-for-up{
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #7F9AF5;
+  border-radius: 10px;
+}
+.fa-search:hover{
+  cursor: pointer;
+  
+}
+.fa-arrow-up{
+  cursor: pointer;
+  color:black;
+  padding-left: 18px;
+  padding-top: 16px;
+ 
+}
+.fa-arrow-up:hover{
+  color:white;
+}
 .fa-times-circle{
   
   padding:10px;

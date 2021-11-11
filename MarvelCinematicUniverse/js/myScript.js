@@ -95,30 +95,29 @@ document.querySelector("#modal-close3").addEventListener('click', () =>{
     modalContainerMovie3.classList.add("modal-container-close");
 });
 
-//CAPTAIN AMERICA THE FIRST AVENGER
-const modalContainerMovie4 = document.querySelector(".movie4");
+//THOR 1
+;
 document.querySelector("#movie4").addEventListener('click' , () =>{
   
-    modalContainerMovie4.classList.add("modal-container");
-    modalContainerMovie4.classList.remove("modal-container-close");
+    document.querySelector(".movie4").classList.add("modal-container");
+    document.querySelector(".movie4").classList.remove("modal-container-close");
 });
 
 document.querySelector("#modal-close4").addEventListener('click', () =>{
-    modalContainerMovie4.classList.remove("modal-container");
-    modalContainerMovie4.classList.add("modal-container-close");
+    document.querySelector(".movie4").classList.remove("modal-container");
+    document.querySelector(".movie4").classList.add("modal-container-close");
 });
 
-//THOR 1
-const modalContainerMovie5 = document.querySelector(".movie5");
+//CAPTAIN AMERICA THE FIRST AVENGER
 document.querySelector("#movie5").addEventListener('click' , () =>{
   
-    modalContainerMovie5.classList.add("modal-container");
-    modalContainerMovie5.classList.remove("modal-container-close");
+    document.querySelector(".movie5").classList.add("modal-container");
+    document.querySelector(".movie5").classList.remove("modal-container-close");
 });
 
 document.querySelector("#modal-close5").addEventListener('click', () =>{
-    modalContainerMovie5.classList.remove("modal-container");
-    modalContainerMovie5.classList.add("modal-container-close");
+    document.querySelector(".movie5").classList.remove("modal-container");
+    document.querySelector(".movie5").classList.add("modal-container-close");
 });
 
 //AVENGERS 1
@@ -185,24 +184,25 @@ document.querySelector("#modal-close10").addEventListener('click', () =>{
     document.querySelector(".movie10").classList.add("modal-container-close");
 });
 
-//ANT MAN
+
+//AVENGERS AGE OF ULTRON
 document.querySelector(".movie11");
 document.querySelector("#movie11").addEventListener('click' , () =>{ 
     document.querySelector(".movie11").classList.add("modal-container");
     document.querySelector(".movie11").classList.remove("modal-container-close");
 });
+
 document.querySelector("#modal-close11").addEventListener('click', () =>{
     document.querySelector(".movie11").classList.remove("modal-container");
     document.querySelector(".movie11").classList.add("modal-container-close");
 });
 
-//AVENGERS AGE OF ULTRON
+//ANT MAN
 document.querySelector(".movie12");
 document.querySelector("#movie12").addEventListener('click' , () =>{ 
     document.querySelector(".movie12").classList.add("modal-container");
     document.querySelector(".movie12").classList.remove("modal-container-close");
 });
-
 document.querySelector("#modal-close12").addEventListener('click', () =>{
     document.querySelector(".movie12").classList.remove("modal-container");
     document.querySelector(".movie12").classList.add("modal-container-close");
@@ -268,7 +268,7 @@ document.querySelector("#modal-close17").addEventListener('click', () =>{
     document.querySelector(".movie17").classList.add("modal-container-close");
 });
 
-//ANTMAN & WASP
+//BLACK PANTHER
 document.querySelector(".movie18");
 document.querySelector("#movie18").addEventListener('click' , () =>{ 
     document.querySelector(".movie18").classList.add("modal-container");
@@ -279,6 +279,7 @@ document.querySelector("#modal-close18").addEventListener('click', () =>{
     document.querySelector(".movie18").classList.remove("modal-container");
     document.querySelector(".movie18").classList.add("modal-container-close");
 });
+
 
 //INFINITY WAR
 document.querySelector(".movie19");
@@ -292,7 +293,7 @@ document.querySelector("#modal-close19").addEventListener('click', () =>{
     document.querySelector(".movie19").classList.add("modal-container-close");
 });
 
-//BLACK PANTHER
+//ANTMAN & WASP
 document.querySelector(".movie20");
 document.querySelector("#movie20").addEventListener('click' , () =>{ 
     document.querySelector(".movie20").classList.add("modal-container");
@@ -340,7 +341,7 @@ document.querySelector("#modal-close23").addEventListener('click', () =>{
     document.querySelector(".movie23").classList.add("modal-container-close");
 });
 
-//BLACK WIDOW
+//WANDA VISION
 document.querySelector(".movie24");
 document.querySelector("#movie24").addEventListener('click' , () =>{ 
     document.querySelector(".movie24").classList.add("modal-container");
@@ -352,7 +353,7 @@ document.querySelector("#modal-close24").addEventListener('click', () =>{
     document.querySelector(".movie24").classList.add("modal-container-close");
 });
 
-//WANDA VISION
+//FALCON AND WINTER SOLDIER
 document.querySelector(".movie25");
 document.querySelector("#movie25").addEventListener('click' , () =>{ 
     document.querySelector(".movie25").classList.add("modal-container");
@@ -364,7 +365,7 @@ document.querySelector("#modal-close25").addEventListener('click', () =>{
     document.querySelector(".movie25").classList.add("modal-container-close");
 });
 
-//FALCON AND WINTER SOLDIER
+//LOKI
 document.querySelector(".movie26");
 document.querySelector("#movie26").addEventListener('click' , () =>{ 
     document.querySelector(".movie26").classList.add("modal-container");
@@ -376,7 +377,7 @@ document.querySelector("#modal-close26").addEventListener('click', () =>{
     document.querySelector(".movie26").classList.add("modal-container-close");
 });
 
-//LOKI
+//BLACK WIDOW
 document.querySelector(".movie27");
 document.querySelector("#movie27").addEventListener('click' , () =>{ 
     document.querySelector(".movie27").classList.add("modal-container");
