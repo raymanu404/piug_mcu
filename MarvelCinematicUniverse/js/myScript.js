@@ -452,3 +452,38 @@ document.querySelector("#modal-close32").addEventListener('click', () =>{
 
 
 /************************* NEXT ********************************/
+let buttonHELP = false;
+const helpButton = document.getElementById("help-button");
+helpButton.addEventListener("click",function(){
+    if(buttonHELP){
+        helpButton.style.color = "#000";
+        document.querySelector(".modal-help").classList.remove("modal-container-help");
+        document.querySelector(".modal-help").classList.add("modal-container-close");
+        buttonHELP = false;
+    }else{
+        document.querySelector(".modal-help").classList.add("modal-container-help");
+        document.querySelector(".modal-help").classList.remove("modal-container-close");
+        buttonHELP = true;      
+        helpButton.style.color = "#FFF";
+    }
+   
+
+});
+
+document.querySelector("#modal-close-help").addEventListener('click', () =>{
+    helpButton.style.color = "#000";
+    document.querySelector(".modal-help").classList.remove("modal-container-help");
+    document.querySelector(".modal-help").classList.add("modal-container-close");
+    var stopVideo = function ( element ) {
+        var iframe = element.querySelector( 'iframe');
+        var video = element.querySelector( '.marvel-video' );
+        if ( iframe ) {
+            var iframeSrc = iframe.src;
+            iframe.src = iframeSrc;
+        }
+        if ( video ) {
+            video.pause();
+        }
+    };
+    stopVideo(document);
+});

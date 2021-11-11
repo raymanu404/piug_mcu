@@ -510,8 +510,8 @@
             </div>
              
             <div class="btns">
-                <a id="prevSlide">Previous</a>
-                <a id="nextSlide">Next</a>
+                <a id="prevSlide">Inainte</a>
+                <a id="nextSlide">Dupa</a>
             </div>
         </section>
      
@@ -528,7 +528,7 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                     <div class="col-lg-6">
                        
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN" method="post" action="mailto:caprariuemanuel58@gmail.com">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
@@ -542,12 +542,7 @@
                                 <div class="invalid-feedback" data-sb-feedback="email:required">Emailul este necesar.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Emailul nu este valid.</div>
                             </div>
-                            <!-- Phone number input
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Telefon</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">Telefonul este necesar.</div>
-                            </div> -->
+                          
                             <!-- Message input-->
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
@@ -555,21 +550,14 @@
                                 <div class="invalid-feedback" data-sb-feedback="message:required">Mesajul este necesar.</div>
                             </div>
                             <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
+                          
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    
+                                    <div class="fw-bolder">Multumesc pentru FeedBack!</div>
+                            
                                 </div>
                             </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
+                            <!-- Submit error message-->           
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Eroare la trimiterea mesajului!</div></div>
                             <!-- Submit Button-->
                             <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Trimite</button></div>
@@ -1118,7 +1106,43 @@
         <div class="button-up">
            <a class="button-for-up" href="#page-top"> <i class="fas fa-arrow-up" ></i></a>
         </div>
-        
+        <div class="button-help" >
+            <div class="button-help-div">
+                <i id="help-button" class="fas fa-question-circle"></i>
+            </div>           
+        </div>
+
+        <div class="modal-container-close modal-help">
+            <div class="modal-for-help">
+                <i class="fas fa-times-circle" id="modal-close-help"></i>
+                <h2>Detalii despre site</h2>               
+                <p>
+                    Site-ul acesta este facut pentru a vizualiza o parte din Marvel Cinematic Universe. 
+                    Mai jos am sa evidentiez cate putin detalii si functionalitatea acestui site Web
+                    
+                </p>  
+                <p>
+                    In partea de sus al paginii se gasesc butoanele pentru navigare( Despre, Filme , Butonul de navigare, dar si partea de Contact).
+                    Totodata exista in partea dreapta jos un buton de up (cel cu sagetuta in sus) pentru a redirectiona pagina in sus
+                    Fiecare buton din navigare odata apasat redirectioneaza la sectiunea corespunzatoare (de exemplu Butonul din navigatie MCU - diretioneaza pagina inapoi in sus). Pe langa aceste butoane exista si o zona pentru a cauta filmul favorit MARVEL respectiv selectarea filmului si deschiderea
+                    paginii corespunzatoare fiecarui film in parte. 
+                    Pentru filme, exista un carusel pentru a naviga mai usor si vizualiza prin intermediul butoanelor de Inainte/Dupa.
+                    Pentru partea de contact, am lasat un modul unde puteti sa lasati un FeedBack legat de pagina in sine, sau de continutul paginii.
+                </p>
+                <h2>
+                    Filme
+                </h2>  
+                <p>
+                    Marvel Cinematic Universe (MCU) este o franciză media americană și un univers comun, centrat pe o serie de filme cu supereroi produse de Marvel Studios. Filmele se bazează pe personaje care apar în cărțile de benzi desenate americane publicate de Marvel Comics. Franciza include, de asemenea, seriale de televiziune, scurtmetraje, seriale digitale și literatură. Universul comun, la fel ca Universul Marvel original din benzile desenate, a fost stabilit prin trecerea elementelor comune ale intrigii, decorurilor, distribuției și personajelor comune.
+                    Primul film MCU este Iron Man (2008), care a început filmele din Phase One culminând cu filmul încrucișat The Avengers (2012). Faza a doua a început cu Iron Man 3 (2013) și s-a încheiat cu Ant-Man (2015). Faza a treia a început cu Captain America: Civil War (2016) și s-a încheiat cu Spider-Man: Far From Home (2019). Primele trei faze ale francizei sunt cunoscute în mod colectiv sub numele de „The Infinity Saga”. Filmele din Phase Four au început cu Black Widow (2021).
+                    Marvel Television a extins universul la televiziunea de rețea cu Agents of S.H.I.E.L.D. pe ABC în 2013, înainte de a se extinde în continuare la televiziunea în flux pe Netflix și Hulu și la televiziunea prin cablu pe Freeform. Ei au produs și seria digitală Agents of S.H.I.E.L.D.: Slingshot. Studiourile Marvel au început să producă propriile serii de televiziune pentru streaming pe Disney+, începând cu WandaVision în 2021, ca începutul Fazei Patru. MCU include, de asemenea, benzi desenate publicate de Marvel Comics, o serie de scurtmetraje direct-to-video numite Marvel One-Shots și o campanie de marketing viral pentru filmele care prezintă programul de știri false WHIH Newsfront.
+                    Franciza a avut succes comercial și a primit în general recenzii pozitive. A inspirat alte studiouri de film și televiziune să încerce să creeze universuri comune similare cu adaptări ale personajelor de benzi desenate. MCU a inspirat, de asemenea, mai multe atracții tematice, o expoziție de artă, două programe speciale de televiziune, ghiduri pentru fiecare film, mai multe jocuri video și reclame.
+                </p>  
+                <div class="myIframe">
+                    <iframe class="marvel-video" width="560" height="315" src="https://www.youtube.com/embed/QdpxoFcdORI" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>                      
+            </div>           
+        </div>
         <!-- Footer-->
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Marvel Cinematic Universe 2021 - Emanuel Căprariu - AN IV IS</div></div>
